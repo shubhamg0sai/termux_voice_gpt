@@ -14,10 +14,11 @@ It is generated from our [OpenAPI specification](https://github.com/openai/opena
 
 ```sh
 pkg update && pkg upgrade
+pkg install git
 ``
 
 ```sh
-pkg install git
+
 ``
 
 ```sh
