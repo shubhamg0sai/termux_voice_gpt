@@ -15,25 +15,7 @@ It is generated from our [OpenAPI specification](https://github.com/openai/opena
 ```sh
 pkg update && pkg upgrade
 pkg install git
-``
-
-```sh
-
-``
-
-```sh
 pkg install python && pkg install python2 && pkg install python3
-``
-
-```sh
-cd termux_voice_gpt.git
-``
-
-```sh
-cd termux_voice_gpt.git
-``
-
-```sh
 git clone https://github.com/shubhamg0sai/termux_voice_gpt.git
 ```
 
