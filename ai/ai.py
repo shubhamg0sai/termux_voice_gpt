@@ -8,18 +8,13 @@ def ai(query):
     global prompt
     prompt=f'sir: {query}\n '
     print(prompt)
-    response=openai.Completion.create(
-        model="text-davinci-003",
-        prompt= prompt,
-        temperature=0.9,
-        max_tokens=4000,
-        n=1,
-        stop=None,
-        top_p=1,
-        frequency_penalty=0,
-        presence_penalty=0
-    )
-    words=response.choices[0].text.strip()
+    response = openai.ChatCompletion.create(
+        model="gpt-3.5-turbo",
+        messages=[
+            {"role": "user", "content": prompt }
+            ]
+        )
+    words=response['choices'][0]['message']['content']
     answer=words
     prompt += f"{response['choices'][0]['text']}\n"
     return answer
