@@ -16,5 +16,4 @@ def ai(query):
         )
     words=response['choices'][0]['message']['content']
     answer=words
-    prompt += f"{response['choices'][0]['text']}\n"
     return answer
