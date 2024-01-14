@@ -21,7 +21,7 @@ git clone https://github.com/shubhamg0sai/termux_voice_gpt.git
 ```
 
 ```sh
-cd termux_voice_gpt.git
+cd termux_voice_gpt
 ```
 
 ## Installation
